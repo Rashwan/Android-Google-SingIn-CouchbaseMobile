@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_id": "proud-woods-124819",
+    "project_number": "435562047969",
+    "name": "Google-Signin-Couchbase"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435562047969:android:4497756e7b0bf0fd",
+        "client_id": "android:com.android.rashwan.google_signin_couchbase",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.android.rashwan.google_signin_couchbase",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435562047969-3bkhslbucmgvvldb0et1jh1j77o01ga7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.rashwan.google_signin_couchbase",
+            "certificate_hash": "8020B63C63F57CF5E7EDCC8F0D749F2798AB96AF"
+          }
+        },
+        {
+          "client_id": "435562047969-ufmr8am7j9rchr145p0j49udih764hvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}
