@@ -55,6 +55,8 @@ public class MainActivity extends AppCompatActivity implements
     private static final int RC_PERM_GET_ACCOUNTS = 2;
 
     private static final String SERVER_CLIENT_ID = "435562047969-ufmr8am7j9rchr145p0j49udih764hvr.apps.googleusercontent.com";
+    private static final String BACKEND_SERVER_URL = "http://192.168.1.15:9000/auth/api/authenticate/google";
+
     private static final String TAG = MainActivity.class.getSimpleName();
 
     /* Is there a ConnectionResult resolution in progress? */
@@ -67,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements
     private static final String KEY_IS_RESOLVING = "is_resolving";
     private static final String KEY_SHOULD_RESOLVE = "should_resolve";
 
-    TextView accountInfo ;
+    private TextView accountInfo ;
 
 
     @Override
@@ -83,6 +85,7 @@ public class MainActivity extends AppCompatActivity implements
         }
         // [END restore_saved_instance_state]
 
+        // TODO: 3/16/16 Remove this Ugly Code 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
@@ -369,7 +372,7 @@ public class MainActivity extends AppCompatActivity implements
             if (request != null){
                 try {
                     HttpClient httpClient = new DefaultHttpClient();
-                    HttpPost httpPost = new HttpPost("http://192.168.1.15:9000/auth/api/authenticate/google");
+                    HttpPost httpPost = new HttpPost(BACKEND_SERVER_URL);
                     StringEntity entity = new StringEntity(request.toString());
                     entity.setContentType("application/json;charset=UTF-8");
                     entity.setContentEncoding(new BasicHeader(HTTP.CONTENT_TYPE, "application/json;charset=UTF-8"));
